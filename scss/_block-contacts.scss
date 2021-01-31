@@ -1,0 +1,131 @@
+.contacts {
+    &-wrap {
+        width: 100%;
+        min-height: 555px;
+        background: #333;
+    }
+
+    h2 {
+        font-weight: 300;
+        font-size: 48px;
+        line-height: 65px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        padding-top: 120px;
+        margin-bottom: 100px;
+        margin-top: 0;
+    }
+    &__connect {
+        width: 100%;
+        @include justify-between;
+        flex-wrap: wrap;
+
+        @media (max-width: 992px) {
+            flex-direction: column;
+        }
+
+        &_communication {
+            order: 1;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 22px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            a {
+                display: block;
+                margin-bottom: 25px;
+            }
+
+            @media (max-width: 992px) {
+                width: 100%;
+                @include justify-between;
+                order: 2;
+                margin: 80px 0;
+
+                .contacts__connect_phone a:nth-child(2) {
+                    margin-bottom: 0;
+                }
+            }
+        }
+        &_form {
+            order: 2;
+            max-width: 730px;
+            @include justify-between;
+            flex-wrap: wrap;
+
+            .inputs {
+                width: 390px;
+                display: flex;
+                flex-wrap: wrap;
+
+                input:nth-child(1) {
+                    margin: 0 30px 30px 0;
+                }
+                input:nth-child(3) {
+                    margin: 0 30px 0 0;
+                }
+            }
+            input,
+            textarea {
+                font-family: $font-sans;
+                background: #444444;
+                border: 1px solid #616161;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 18px;
+                color: #989898;
+                padding-left: 15px;
+            }
+            input {
+                width: 180px;
+                height: 35px;
+            }
+            textarea {
+                width: 310px;
+                height: 100px;
+
+                &::placeholder {
+                    padding-top: 7px;
+                }
+
+                @media (max-width: 992px) {
+                    width: 270px;
+                }
+            }
+
+            .submit {
+                width: 100%;
+                @include justify-between;
+                flex-wrap: wrap;
+                margin-top: 40px;
+
+                p {
+                    max-width: 390px;
+                    font-family: $font-sans;
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 18px;
+                    color: #989898;
+                }
+                button {
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 25px;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    background: #d1a954;
+                    height: 50px;
+                    padding: 0 43px;
+                }
+            }
+
+            @media (max-width: 992px) {
+                order: 1;
+            }
+        }
+    }
+}

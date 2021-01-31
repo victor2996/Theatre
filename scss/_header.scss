@@ -1,0 +1,115 @@
+.header {
+    &-wrap {
+        width: 100%;
+        position: absolute;
+    }
+}
+
+.navbar {
+    @include justify-between;
+    padding: 51px 0;
+
+    &__menu {
+        ul {
+            @include justify-between;
+            padding-left: 0;
+            margin: 0;
+        }
+        li {
+            margin-right: 63px;
+        }
+    }
+    a {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+    }
+    &__phone a {
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        border-bottom: 2px solid #d1a954;
+    }
+    &__phone-active a {
+        display: none;
+
+        @media (min-width: 1919px) {
+            display: block;
+        }
+    }
+
+    &.navbar-active {
+        position: fixed;
+        background-color: #333;
+        min-width: 1920px;
+        padding: 20px 0 20px 244px;
+        z-index: 50;
+
+        @media (min-width: 1920px) {
+            padding: 20px 417px;
+        }
+        @media (max-width: 992px) {
+            display: none;
+        }
+    }
+}
+
+.contactbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333333bf;
+    height: 100%;
+    padding-left: 64px;
+    padding-right: 60px;
+    display: flex;
+    flex-flow: nowrap column;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 50;
+
+    @media (min-width: 1921px) {
+        position: absolute;
+        height: 1045px;
+    }
+    @media (max-width: 992px) {
+        padding-left: 49px;
+        padding-right: 45px;
+    }
+    @media (max-width: 1440px) {
+        position: absolute;
+        height: 1045px;
+    }
+
+    &__info {
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        white-space: nowrap;
+        margin-bottom: 40px;
+    }
+    span {
+        width: 3px;
+        height: 80px;
+        background-color: #c4c4c4;
+        margin-bottom: 40px;
+    }
+    &__social {
+        @include justify-center;
+        flex-direction: column;
+
+        a {
+            margin-bottom: 30px;
+
+            &:last-child {
+                margin-bottom: 86px;
+            }
+        }
+    }
+}
