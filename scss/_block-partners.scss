@@ -32,22 +32,30 @@
 
     &__slider {
         display: none;
+        // max-width: 690px;
 
-        .carousel-inner {
-            &:nth-child(2) img {
-            }
+        .owl-stage-outer {
+            max-width: 690px;
+            margin: 0 auto;
         }
+        .owl-stage {
+        }
+        .owl-item {
+            // min-width: 200px;
+            // padding-right: 80px;
+        }
+
+        img {
+            max-width: 200px;
+        }
+
+        .carousel-bottom,
+        .carousel-top {
+            margin-top: 80px;
+        }
+
         @media (max-width: 992px) {
             display: block;
-            margin-top: 40px;
-        }
-        .carousel-control-prev {
-            left: -50px;
-            bottom: -60px;
-        }
-        .carousel-control-next {
-            right: -50px;
-            bottom: -60px;
         }
     }
 }

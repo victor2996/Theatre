@@ -15,11 +15,12 @@
         text-align: center;
         letter-spacing: 0.1em;
         text-transform: uppercase;
-        margin-bottom: 100px;
+        margin: 0 0 100px;
     }
 
     &__description {
-        @include justify-between;
+        display: flex;
+        justify-content: space-between;
 
         @media (max-width: 992px) {
             margin-left: 80px;
@@ -34,9 +35,10 @@
             margin-bottom: 40px;
         }
         &_text {
-            min-width: 445px;
+            max-width: 445px;
 
             p {
+                min-width: 445px;
                 font-family: $font-sans;
                 font-weight: normal;
                 font-size: 14px;
@@ -53,14 +55,18 @@
                 font-size: 16px;
                 line-height: 22px;
                 letter-spacing: 0.05em;
-                padding-top: 16px;
+                padding: 15px 0 28px;
+
+                &:last-child {
+                    padding-bottom: 0;
+                }
             }
         }
         &_img {
             width: 350px;
             height: 292px;
 
-            @media (max-width: 992px) {
+            @media (max-width: 1440px) {
                 display: none;
             }
         }

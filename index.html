@@ -20,7 +20,7 @@
     <body>
         <header class="header-wrap">
             <div class="container container-adaptive">
-                <div class="header">
+                <div class="header" id="main">
                     <nav class="navbar">
                         <!-- <div class="navbar__burger">
                             <span></span>
@@ -28,7 +28,7 @@
                         <div class="navbar__menu">
                             <ul>
                                 <li>
-                                    <a href="#">Главная</a>
+                                    <a href="#main">Главная</a>
                                 </li>
                                 <li>
                                     <a href="#about">о театре</a>
@@ -142,48 +142,51 @@
             <h2><span class="gold">наши</span> постановки</h2>
             <div class="supplies__wrapper">
                 <div class="supplies__images">
-                    <figure class="perform perfom1">
-                        <img src="img/perfom1.jpg" alt="" />
-                        <div class="perform__disc">
-                            <h3>ОСКАР 2020</h3>
-                            <p>сентябрь 2020</p>
-                        </div>
-                        <div class="perform__search">
-                            <img src="img/search.png" alt="" />
-                        </div>
-                    </figure>
-                    <figure class="perform perfom2">
-                        <img src="img/perfom2.jpg" alt="" />
-                        <div class="perform__disc">
-                            <h3>Эрмитаж</h3>
-                            <p>август 2020</p>
-                        </div>
-                        <div class="perform__search">
-                            <img src="img/search.png" alt="" />
-                        </div>
-                    </figure>
-                    <figure class="perform perfom3">
-                        <img src="img/perfom3.jpg" alt="" />
-                        <div class="perform__disc">
-                            <h3>золотой грамофон</h3>
-                            <p>июль 2020</p>
-                        </div>
-                        <div class="perform__search">
-                            <img src="img/search.png" alt="" />
-                        </div>
-                    </figure>
-                    <figure class="perform perfom4">
-                        <img src="img/perfom4.jpg" alt="" />
-                        <div class="perform__disc">
-                            <h3>щелкунчик</h3>
-                            <p>май 2020</p>
-                        </div>
-                        <div class="perform__search">
-                            <img src="img/search.png" alt="" />
-                        </div>
+                    <div class="owl-carousel">
+                        <figure class="perform perfom1">
+                            <img src="img/perfom1.jpg" alt="" />
+                            <div class="perform__disc">
+                                <h3>ОСКАР 2020</h3>
+                                <p>сентябрь 2020</p>
+                            </div>
+                            <div class="perform__search">
+                                <img src="img/search.png" alt="" />
+                            </div>
+                        </figure>
+                        <figure class="perform perfom2">
+                            <img src="img/perfom2.jpg" alt="" />
+                            <div class="perform__disc">
+                                <h3>Эрмитаж</h3>
+                                <p>август 2020</p>
+                            </div>
+                            <div class="perform__search">
+                                <img src="img/search.png" alt="" />
+                            </div>
+                        </figure>
+                        <figure class="perform perfom3">
+                            <img src="img/perfom3.jpg" alt="" />
+                            <div class="perform__disc">
+                                <h3>золотой грамофон</h3>
+                                <p>июль 2020</p>
+                            </div>
+                            <div class="perform__search">
+                                <img src="img/search.png" alt="" />
+                            </div>
+                        </figure>
+                        <figure class="perform perfom4">
+                            <img src="img/perfom4.jpg" alt="" />
+                            <div class="perform__disc">
+                                <h3>щелкунчик</h3>
+                                <p>май 2020</p>
+                            </div>
+                            <div class="perform__search">
+                                <img src="img/search.png" alt="" />
+                            </div>
+                        </figure>
+                    </div>
                 </div>
 
-                <div class="supplies__slider">
+                <!-- <div class="supplies__slider">
                     <div class="owl-carousel">
                         <figure class="perform perfom1">
                             <img src="img/perfom1.jpg" alt="" />
@@ -226,7 +229,7 @@
                             </div>
                         </figure>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div class="supplies__review">
                 <div class="supplies__review_years">
@@ -256,14 +259,28 @@
                 <div class="partners" id="partners">
                     <h2><span class="gold">партнеры</span> театра</h2>
                     <div class="partners__img">
-                        <img class="partners__slider_img" src="img/gas.png" />
-                        <img class="partners__slider_img" src="img/gas.png" />
-                        <img class="partners__slider_img" src="img/gas.png" />
-                        <img class="partners__slider_img" src="img/gas.png" />
-                        <img class="partners__slider_img" src="img/gas.png" />
-                        <img class="partners__slider_img" src="img/gas.png" />
-                        <img class="partners__slider_img" src="img/gas.png" />
-                        <img class="partners__slider_img" src="img/gas.png" />
+                        <img src="img/gas.png" />
+                        <img src="img/gas.png" />
+                        <img src="img/gas.png" />
+                        <img src="img/gas.png" />
+                        <img src="img/gas.png" />
+                        <img src="img/gas.png" />
+                        <img src="img/gas.png" />
+                        <img src="img/gas.png" />
+                    </div>
+                    <div class="partners__slider">
+                        <div class="owl-carousel carousel-top">
+                            <div><img src="img/gas.png" /></div>
+                            <div><img src="img/gas.png" /></div>
+                            <div><img src="img/gas.png" /></div>
+                            <div><img src="img/gas.png" /></div>
+                        </div>
+                        <div class="owl-carousel carousel-bottom">
+                            <div><img src="img/gas.png" /></div>
+                            <div><img src="img/gas.png" /></div>
+                            <div><img src="img/gas.png" /></div>
+                            <div><img src="img/gas.png" /></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -336,7 +353,7 @@
         <!-- /footer -->
 
         <!-- JQuery -->
-        <script src="js/jquery-3.5.1.slim.min.js"></script>
+        <script src="js/jquery-3.5.1.min.js"></script>
         <!-- Owl-Carousel JS-->
         <script src="js/owl.carousel.min.js"></script>
         <!-- JS -->

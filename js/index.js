@@ -11,9 +11,53 @@ $(document).ready(function () {
         }
     });
 });
+$(document).ready(function () {
+    $('.navbar__menu').on('click', 'a', function (event) {
+        event.preventDefault();
+        var id = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({ scrollTop: top }, 1500);
+    });
+});
 
 $(document).ready(function () {
     $('.poster__show .owl-carousel').owlCarousel({
         items: 1
+    });
+});
+$(document).ready(function () {
+    $('.supplies__images .owl-carousel').owlCarousel({
+        items: 4,
+        freeDrag: false,
+        autoWidth: true,
+        autoHeight: true,
+        loop: true
+    });
+});
+// $(document).ready(function () {
+//     $('.supplies__slider .owl-carousel').owlCarousel({
+//         items: 2,
+//         freeDrag: false,
+//         autoWidth: true,
+//         autoHeight: true,
+//         loop: true
+//     });
+// });
+$(document).ready(function () {
+    $('.owl-carousel.carousel-top').owlCarousel({
+        items: 4,
+        autoWidth: true,
+        autoHeight: true,
+        loop: true,
+        margin: 80
+    });
+});
+$(document).ready(function () {
+    $('.owl-carousel.carousel-bottom').owlCarousel({
+        items: 4,
+        autoWidth: true,
+        autoHeight: true,
+        loop: true,
+        margin: 80
     });
 });
