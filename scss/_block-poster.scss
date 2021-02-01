@@ -40,48 +40,62 @@
             padding: 0 47px;
         }
     }
-    // &__show {
-    //     width: 370px;
-    //     height: 570px;
+    &__show {
+        width: 370px;
+        height: 570px;
 
-    //     .carousel-inner {
-    //         &:nth-child(2) img {
-    //         }
-    //     }
-    //     @media (max-width: 992px) {
-    //         display: block;
-    //         margin-top: 40px;
-    //     }
-    //     .text {
-    //         font-weight: bold;
-    //         font-size: 18px;
-    //         line-height: 25px;
-    //         letter-spacing: 0.1em;
-    //         text-transform: uppercase;
-    //     }
-    //     .line-prev,
-    //     .line-next {
-    //         width: 40px;
-    //         height: 2px;
-    //         background: #fff;
-    //     }
-    //     .line-prev {
-    //         margin: 0 25px 0 -16px;
-    //     }
-    //     .line-next {
-    //         margin: 0 -16px 0 25px;
-    //     }
+        img {
+            width: 100%;
+            // width: 350px;
+            // height: 490px;
+        }
 
-    //     .carousel-control-prev,
-    //     .carousel-control-next {
-    //         width: 110px;
-    //         bottom: -580px;
-    //     }
-    //     .carousel-control-prev {
-    //         left: -10px;
-    //     }
-    //     .carousel-control-next {
-    //         right: 10px;
-    //     }
-    // }
+        //     .carousel-inner {
+        //         &:nth-child(2) img {
+        //         }
+        //     }
+        //     @media (max-width: 992px) {
+        //         display: block;
+        //         margin-top: 40px;
+        //     }
+        //     .text {
+        //         font-weight: bold;
+        //         font-size: 18px;
+        //         line-height: 25px;
+        //         letter-spacing: 0.1em;
+        //         text-transform: uppercase;
+        //     }
+        //     .line-prev,
+        //     .line-next {
+        //         width: 40px;
+        //         height: 2px;
+        //         background: #fff;
+        //     }
+        //     .line-prev {
+        //         margin: 0 25px 0 -16px;
+        //     }
+        //     .line-next {
+        //         margin: 0 -16px 0 25px;
+        //     }
+
+        //     .carousel-control-prev,
+        //     .carousel-control-next {
+        //         width: 110px;
+        //         bottom: -580px;
+        //     }
+        //     .carousel-control-prev {
+        //         left: -10px;
+        //     }
+        //     .carousel-control-next {
+        //         right: 10px;
+        //     }
+
+        @media (max-width: 1440px) {
+            display: none;
+        }
+    }
+
+    @media (max-width: 1440px) {
+        padding: 384px 0 0 150px;
+    }
 }

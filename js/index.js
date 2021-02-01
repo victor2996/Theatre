@@ -11,3 +11,9 @@ $(document).ready(function () {
         }
     });
 });
+
+$(document).ready(function () {
+    $('.poster__show .owl-carousel').owlCarousel({
+        items: 1
+    });
+});

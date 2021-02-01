@@ -15,9 +15,81 @@
         margin-bottom: 100px;
     }
 
-    .supplies__slider {
+    &__wrapper {
         width: 100%;
-        min-height: 550px;
+        height: 550px;
+        margin-bottom: 150px;
+
+        .perform {
+            max-width: 442px;
+            max-height: 550px;
+            margin: 0;
+            position: relative;
+
+            img {
+                width: 100%;
+            }
+
+            &__disc {
+                position: absolute;
+                display: flex;
+                flex-flow: wrap column;
+                justify-content: space-between;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                padding: 40px 40px 0px 40px;
+                background-color: #333333bf;
+
+                h3 {
+                    font-weight: bold;
+                    font-size: 24px;
+                    line-height: 33px;
+                    letter-spacing: 0.05em;
+                    text-transform: uppercase;
+                    margin: 0;
+                }
+                p {
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 25px;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    transform: rotate(-90deg);
+                    transform-origin: left top 0;
+                }
+            }
+            &__search {
+                @include position-center;
+                display: none;
+                cursor: pointer;
+                img {
+                    @media (max-width: 1440px) {
+                        width: 75px;
+                    }
+                }
+            }
+            &:hover,
+            &:active {
+                .perform__disc {
+                    display: none;
+                }
+                .perform__search {
+                    display: block;
+                }
+            }
+        }
+
+        .supplies__images {
+            @include justify-center;
+            padding-left: 150px;
+            height: 100%;
+        }
+
+        .supplies__slider {
+            display: none;
+        }
     }
 
     .supplies__review {

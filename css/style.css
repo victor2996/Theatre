@@ -92,6 +92,11 @@ a:hover {
     padding: 20px 417px;
   }
 }
+@media (max-width: 1440px) {
+  .navbar.navbar-active {
+    padding: 20px 165px;
+  }
+}
 @media (max-width: 992px) {
   .navbar.navbar-active {
     display: none;
@@ -99,6 +104,7 @@ a:hover {
 }
 
 .contactbar {
+  width: 26px;
   position: fixed;
   top: 0;
   left: 0;
@@ -202,6 +208,23 @@ a:hover {
   height: 50px;
   padding: 0 47px;
 }
+.poster__show {
+  width: 370px;
+  height: 570px;
+}
+.poster__show img {
+  width: 100%;
+}
+@media (max-width: 1440px) {
+  .poster__show {
+    display: none;
+  }
+}
+@media (max-width: 1440px) {
+  .poster {
+    padding: 384px 0 0 150px;
+  }
+}
 
 .about {
   display: flex;
@@ -291,9 +314,77 @@ a:hover {
   text-transform: uppercase;
   margin-bottom: 100px;
 }
-.supplies .supplies__slider {
+.supplies__wrapper {
   width: 100%;
-  min-height: 550px;
+  height: 550px;
+  margin-bottom: 150px;
+}
+.supplies__wrapper .perform {
+  max-width: 442px;
+  max-height: 550px;
+  margin: 0;
+  position: relative;
+}
+.supplies__wrapper .perform img {
+  width: 100%;
+}
+.supplies__wrapper .perform__disc {
+  position: absolute;
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  padding: 40px 40px 0px 40px;
+  background-color: #333333bf;
+}
+.supplies__wrapper .perform__disc h3 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 0;
+}
+.supplies__wrapper .perform__disc p {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transform: rotate(-90deg);
+  transform-origin: left top 0;
+}
+.supplies__wrapper .perform__search {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  cursor: pointer;
+}
+@media (max-width: 1440px) {
+  .supplies__wrapper .perform__search img {
+    width: 75px;
+  }
+}
+.supplies__wrapper .perform:hover .perform__disc, .supplies__wrapper .perform:active .perform__disc {
+  display: none;
+}
+.supplies__wrapper .perform:hover .perform__search, .supplies__wrapper .perform:active .perform__search {
+  display: block;
+}
+.supplies__wrapper .supplies__images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 150px;
+  height: 100%;
+}
+.supplies__wrapper .supplies__slider {
+  display: none;
 }
 .supplies .supplies__review {
   width: 1110px;
