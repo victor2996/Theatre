@@ -15,6 +15,11 @@
         padding-top: 120px;
         margin-bottom: 100px;
         margin-top: 0;
+
+        @media (max-width: 767px) {
+            padding-top: 80px;
+            margin-bottom: 60px;
+        }
     }
     &__connect {
         width: 100%;
@@ -33,6 +38,7 @@
             line-height: 22px;
             letter-spacing: 0.05em;
             text-transform: uppercase;
+
             a {
                 display: block;
                 margin-bottom: 25px;
@@ -48,6 +54,25 @@
                     margin-bottom: 0;
                 }
             }
+            @media (max-width: 767px) {
+                margin: 50px 0 60px;
+            }
+            @media (max-width: 575px) {
+                flex-wrap: wrap;
+                padding-left: 22px;
+                margin: 30px 0;
+
+                .contacts__connect_phone a {
+                    margin-bottom: 15px;
+
+                    &:nth-child(2) {
+                        margin-bottom: 15px;
+                    }
+                }
+                .contacts__connect_addresses a {
+                    margin-bottom: 15px;
+                }
+            }
         }
         &_form {
             order: 2;
@@ -55,16 +80,38 @@
             @include justify-between;
             flex-wrap: wrap;
 
+            @media (max-width: 767px) {
+                width: 100%;
+            }
+
             .inputs {
                 width: 390px;
                 display: flex;
                 flex-wrap: wrap;
 
+                @media (max-width: 767px) {
+                    width: 100%;
+                }
+
                 input:nth-child(1) {
                     margin: 0 30px 30px 0;
+
+                    @media (max-width: 767px) {
+                        margin: 0 49px 30px 0;
+                    }
+                    @media (max-width: 575px) {
+                        margin: 0 30px 30px 22px;
+                    }
                 }
                 input:nth-child(3) {
                     margin: 0 30px 0 0;
+
+                    @media (max-width: 767px) {
+                        margin: 0 49px 30px 0;
+                    }
+                    @media (max-width: 575px) {
+                        margin: 0 30px 30px 22px;
+                    }
                 }
             }
             input,
@@ -81,17 +128,31 @@
             input {
                 width: 180px;
                 height: 35px;
+
+                @media (max-width: 767px) {
+                    width: 230px;
+                }
+                @media (max-width: 575px) {
+                    width: 150px;
+                }
             }
             textarea {
                 width: 310px;
                 height: 100px;
 
-                &::placeholder {
-                    padding-top: 7px;
-                }
-
                 @media (max-width: 992px) {
                     width: 270px;
+                }
+                @media (max-width: 767px) {
+                    width: 509px;
+                }
+                @media (max-width: 575px) {
+                    width: 330px;
+                    margin: 0 auto;
+                }
+
+                &::placeholder {
+                    padding-top: 7px;
                 }
             }
 
@@ -101,6 +162,11 @@
                 flex-wrap: wrap;
                 margin-top: 40px;
 
+                @media (max-width: 767px) {
+                    @include justify-center;
+                    margin-top: 40px;
+                }
+
                 p {
                     max-width: 390px;
                     font-family: $font-sans;
@@ -108,6 +174,14 @@
                     font-size: 12px;
                     line-height: 18px;
                     color: #989898;
+
+                    @media (max-width: 767px) {
+                        order: 2;
+                    }
+                    @media (max-width: 575px) {
+                        width: 330px;
+                        margin: 0 auto;
+                    }
                 }
                 button {
                     font-weight: bold;
@@ -121,6 +195,11 @@
                     background: #d1a954;
                     height: 50px;
                     padding: 0 43px;
+
+                    @media (max-width: 767px) {
+                        order: 1;
+                        margin-bottom: 30px;
+                    }
                 }
             }
 

@@ -22,9 +22,6 @@
             <div class="container container-adaptive">
                 <div class="header" id="main">
                     <nav class="navbar">
-                        <!-- <div class="navbar__burger">
-                            <span></span>
-                        </div> -->
                         <div class="navbar__menu">
                             <ul>
                                 <li>
@@ -65,6 +62,49 @@
                             /></a>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <div class="navbar__burger">
+                <div class="navbar__burger_icon">
+                    <span></span>
+                </div>
+                <div class="navbar__burger_menu">
+                    <div class="navbar__burger_menu-close"><span></span></div>
+                    <ul>
+                        <li>
+                            <a href="#main">Главная</a>
+                        </li>
+                        <li>
+                            <a href="#about">о театре</a>
+                        </li>
+                        <li>
+                            <a href="#supplies">Наши постановки</a>
+                        </li>
+                        <li>
+                            <a href="#partners">партнеры театра</a>
+                        </li>
+                        <li>
+                            <a href="#contacts">контакты</a>
+                        </li>
+                    </ul>
+                    <div class="navbar__burger_menu-social">
+                        <a href=""
+                            ><img src="img/facebook-burger.svg" alt="instagram"
+                        /></a>
+                        <a href=""
+                            ><img src="img/instagram-burger.svg" alt="facebook"
+                        /></a>
+                        <a href=""
+                            ><img src="img/youtube-burger.svg" alt="vk"
+                        /></a>
+                        <a href=""
+                            ><img src="img/vk-burger.svg" alt="youtube"
+                        /></a>
+                    </div>
+                </div>
+                <div class="navbar__burger_phone">
+                    <a href="tel:+74951234567"> +7 495 123-45-67</a>
                 </div>
             </div>
         </header>
@@ -122,12 +162,22 @@
                         </div>
                         <div class="about__description_numerics">
                             <h3>немного о цифрах</h3>
-                            <img src="img/chair.svg" alt="armchair" />
-                            <p>
-                                <span class="gold">1600</span> посадочный мест
-                            </p>
-                            <img src="img/scene.svg" alt="scene" />
-                            <p><span class="gold">350</span> лет истории</p>
+                            <div class="about__description_numerics-icons">
+                                <div class="about__description_numerics-icon">
+                                    <img src="img/chair.svg" alt="armchair" />
+                                    <p>
+                                        <span class="gold">1600</span>
+                                        посадочный мест
+                                    </p>
+                                </div>
+                                <div class="about__description_numerics-icon">
+                                    <img src="img/scene.svg" alt="scene" />
+                                    <p>
+                                        <span class="gold">350</span> лет
+                                        истории
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                         <div class="about__description_img">
                             <img src="img/about-img.png" alt="Theater" />
@@ -141,7 +191,7 @@
         <section class="supplies" id="supplies">
             <h2><span class="gold">наши</span> постановки</h2>
             <div class="supplies__wrapper">
-                <div class="supplies__images">
+                <div class="supplies__slider">
                     <div class="owl-carousel">
                         <figure class="perform perfom1">
                             <img src="img/perfom1.jpg" alt="" />
@@ -185,51 +235,6 @@
                         </figure>
                     </div>
                 </div>
-
-                <!-- <div class="supplies__slider">
-                    <div class="owl-carousel">
-                        <figure class="perform perfom1">
-                            <img src="img/perfom1.jpg" alt="" />
-                            <div class="perform__disc">
-                                <h3>ОСКАР 2020</h3>
-                                <p>сентябрь 2020</p>
-                            </div>
-                            <div class="perform__search">
-                                <img src="img/search.png" alt="" />
-                            </div>
-                        </figure>
-                        <figure class="perform perfom2">
-                            <img src="img/perfom2.jpg" alt="" />
-                            <div class="perform__disc">
-                                <h3>ОСКАР 2020</h3>
-                                <p>сентябрь 2020</p>
-                            </div>
-                            <div class="perform__search">
-                                <img src="img/search.png" alt="" />
-                            </div>
-                        </figure>
-                        <figure class="perform perfom3">
-                            <img src="img/perfom3.jpg" alt="" />
-                            <div class="perform__disc">
-                                <h3>золотой грамофон</h3>
-                                <p>июль 2020</p>
-                            </div>
-                            <div class="perform__search">
-                                <img src="img/search.png" alt="" />
-                            </div>
-                        </figure>
-                        <figure class="perform perfom4">
-                            <img src="img/perfom4.jpg" alt="" />
-                            <div class="perform__disc">
-                                <h3>щелкунчик</h3>
-                                <p>май 2020</p>
-                            </div>
-                            <div class="perform__search">
-                                <img src="img/search.png" alt="" />
-                            </div>
-                        </figure>
-                    </div>
-                </div> -->
             </div>
             <div class="supplies__review">
                 <div class="supplies__review_years">

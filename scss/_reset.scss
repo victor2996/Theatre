@@ -17,6 +17,12 @@ body {
     @media (max-width: 992px) {
         max-width: 690px;
     }
+    @media (max-width: 767px) {
+        max-width: 510px;
+    }
+    @media (max-width: 575px) {
+        min-width: 100%;
+    }
 }
 li {
     list-style: none;

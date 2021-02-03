@@ -9,15 +9,26 @@
     @media (max-width: 992px) {
         padding-left: 40px;
     }
+    @media (max-width: 575px) {
+        padding-top: 210px;
+    }
 
     &-wrap {
         width: 100%;
         min-height: 1045px;
         background: url('../img/bg-top.png') top center/cover no-repeat;
+
+        @media (max-width: 575px) {
+            min-height: 800px;
+        }
     }
 
     &__description {
         width: 540px;
+
+        @media (max-width: 980px) {
+            margin: 0 auto;
+        }
 
         h2 {
             font-weight: bold;
@@ -33,6 +44,10 @@
             font-size: 14px;
             line-height: 21px;
             margin-bottom: 50px;
+
+            @media (max-width: 575px) {
+                padding-right: 30px;
+            }
         }
         button {
             font-weight: bold;

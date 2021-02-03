@@ -15,6 +15,13 @@
         letter-spacing: 0.1em;
         text-transform: uppercase;
         margin: 150px 0 20px;
+
+        @media (max-width: 767px) {
+            margin: 80px 0 0;
+        }
+        @media (max-width: 575px) {
+            width: 352px;
+        }
     }
     &__img {
         width: 100%;
@@ -33,6 +40,13 @@
     &__slider {
         display: none;
         // max-width: 690px;
+
+        @media (max-width: 767px) {
+            max-width: 510px;
+        }
+        @media (max-width: 575px) {
+            width: 220px;
+        }
 
         .owl-stage-outer {
             max-width: 690px;
