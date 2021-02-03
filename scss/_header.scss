@@ -3,20 +3,6 @@
         width: 100%;
         position: absolute;
     }
-
-    // z-index: 50;
-
-    // &:before {
-    //     @media (max-width: 980px) {
-    //         content: '';
-    //         position: absolute;
-    //         top: 0;
-    //         left: 0;
-    //         width: 100%;
-    //         height: 100%;
-    //         background: #000;
-    //     }
-    // }
 }
 
 .navbar {
@@ -125,10 +111,6 @@
         position: absolute;
         height: 1045px;
     }
-    // @media (max-width: 992px) {
-    //     padding-left: 49px;
-    //     padding-right: 45px;
-    // }
     @media (max-width: 1440px) {
         position: absolute;
         height: 1045px;
@@ -190,7 +172,6 @@
         position: relative;
         width: 27px;
         height: 20px;
-        // z-index: 4;
 
         &:before,
         &:after {
@@ -274,11 +255,25 @@
             align-items: start;
             flex-direction: column;
             margin: 140px 0 0 40px;
+
+            @media (max-width: 575px) {
+                margin-top: 100px;
+            }
+
+            a {
+                @media (max-width: 575px) {
+                    font-weight: bold;
+                    font-size: 20px;
+                    line-height: 22px;
+                    letter-spacing: 0.1em;
+                }
+            }
         }
 
         li {
             margin-bottom: 35px;
         }
+
         &-social {
             position: absolute;
             left: 80px;
@@ -286,10 +281,14 @@
             bottom: 140px;
             width: 140px;
             height: 126px;
-            // margin: 0 0 140px 80px;
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
+
+            @media (max-width: 575px) {
+                left: 60px;
+                top: 455px;
+            }
 
             a {
                 position: absolute;
@@ -329,11 +328,3 @@
         }
     }
 }
-
-// @media (max-width: 980px) {
-//     // display: block;
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     flex-direction: column;
-// }

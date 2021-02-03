@@ -33,10 +33,12 @@ $(document).ready(function () {
         $('.navbar__burger_menu').removeClass('open');
     });
 });
-
 $(document).ready(function () {
     $('.poster__show .owl-carousel').owlCarousel({
-        items: 1
+        items: 1,
+        loop: true,
+        nav: true,
+        navElement: 'div'
     });
 });
 $(document).ready(function () {

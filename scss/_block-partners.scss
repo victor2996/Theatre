@@ -39,8 +39,10 @@
 
     &__slider {
         display: none;
-        // max-width: 690px;
 
+        @media (max-width: 992px) {
+            display: block;
+        }
         @media (max-width: 767px) {
             max-width: 510px;
         }
@@ -52,12 +54,6 @@
             max-width: 690px;
             margin: 0 auto;
         }
-        .owl-stage {
-        }
-        .owl-item {
-            // min-width: 200px;
-            // padding-right: 80px;
-        }
 
         img {
             max-width: 200px;
@@ -66,10 +62,6 @@
         .carousel-bottom,
         .carousel-top {
             margin-top: 80px;
-        }
-
-        @media (max-width: 992px) {
-            display: block;
         }
     }
 }
