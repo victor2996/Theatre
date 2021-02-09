@@ -67,7 +67,7 @@ $(document).ready(function () {
                 autoHeight: false,
                 margin: 80
             },
-            768: {
+            767: {
                 items: 4,
                 loop: true,
                 autoWidth: true,
@@ -94,7 +94,7 @@ $(document).ready(function () {
                 autoHeight: false,
                 margin: 80
             },
-            768: {
+            767: {
                 items: 4,
                 loop: true,
                 autoWidth: true,
