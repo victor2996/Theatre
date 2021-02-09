@@ -56,7 +56,21 @@ $(document).ready(function () {
         autoWidth: true,
         autoHeight: true,
         loop: true,
-        margin: 80
+        margin: 80,
+        responsive: {
+            0: {
+                items: 2,
+                autoWidth: false,
+                autoHeight: false,
+                margin: 50
+            },
+            575: {
+                items: 2,
+                autoWidth: false,
+                autoHeight: false,
+                margin: 50
+            }
+        }
     });
 });
 $(document).ready(function () {
@@ -65,6 +79,20 @@ $(document).ready(function () {
         autoWidth: true,
         autoHeight: true,
         loop: true,
-        margin: 80
+        margin: 80,
+        responsive: {
+            0: {
+                items: 2,
+                autoWidth: false,
+                autoHeight: false,
+                margin: 50
+            },
+            575: {
+                items: 2,
+                autoWidth: false,
+                autoHeight: false,
+                margin: 50
+            }
+        }
     });
 });

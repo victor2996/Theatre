@@ -519,6 +519,12 @@ video {
   text-transform: uppercase;
   margin-bottom: 50px;
 }
+@media (max-width: 575px) {
+  .poster__description h2 {
+    font-size: 50px;
+    line-height: 70px;
+  }
+}
 .poster__description p {
   font-family: "Open Sans", sans-serif;
   font-weight: normal;
@@ -954,7 +960,8 @@ video {
 }
 @media (max-width: 575px) {
   .partners__slider {
-    width: 220px;
+    width: 330px;
+    margin: 0 auto;
   }
 }
 .partners__slider .owl-stage-outer {
@@ -967,6 +974,12 @@ video {
 .partners__slider .carousel-bottom,
 .partners__slider .carousel-top {
   margin-top: 80px;
+}
+@media (max-width: 575px) {
+  .partners__slider .carousel-bottom,
+.partners__slider .carousel-top {
+    margin-top: 40px;
+  }
 }
 
 .contacts-wrap {
